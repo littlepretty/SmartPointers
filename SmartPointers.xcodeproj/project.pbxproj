@@ -28,6 +28,7 @@
 		796A148C16EFD842008E7058 /* SmartPointers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmartPointers; sourceTree = BUILT_PRODUCTS_DIR; };
 		796A148F16EFD842008E7058 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		796A149116EFD842008E7058 /* SmartPointers.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SmartPointers.1; sourceTree = "<group>"; };
+		79E73A6816F0FC9E00C68456 /* Pointers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pointers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		796A148E16EFD842008E7058 /* SmartPointers */ = {
 			isa = PBXGroup;
 			children = (
+				79E73A6816F0FC9E00C68456 /* Pointers.h */,
 				796A148F16EFD842008E7058 /* main.cpp */,
 				796A149116EFD842008E7058 /* SmartPointers.1 */,
 			);
@@ -92,7 +94,7 @@
 		796A148416EFD842008E7058 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = littlepretty;
 			};
 			buildConfigurationList = 796A148716EFD842008E7058 /* Build configuration list for PBXProject "SmartPointers" */;
@@ -128,7 +130,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -160,7 +161,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -214,6 +214,7 @@
 				796A149716EFD842008E7058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

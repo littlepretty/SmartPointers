@@ -7,12 +7,28 @@
 //
 
 #include <iostream>
+#include "Pointers.h"
 
-int main(int argc, const char * argv[])
+
+using namespace std;
+
+void testSuperSmartPointer()
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    Nothing* pNothing = new Nothing();
+    
+    {
+        SuperSmartPointer<Nothing> ptr1(pNothing);
+        SuperSmartPointer<Nothing> ptr2(pNothing);
+    }
+    
+    if (Nothing::sNumAllocations != Nothing::sNumDeletions) {
+        std::cout << "TEST FAILED: " << Nothing::sNumAllocations<<" allocations and " << Nothing::sNumDeletions << " deletions" << std::endl;
+    }else{
+        std::cout << "TEST PASSED" << std::endl;
+    }
 }
 
+int main(int argc, const char* argv[])
+{
+    testSuperSmartPointer();
+}
